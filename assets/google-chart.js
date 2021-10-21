@@ -29,7 +29,7 @@ function drawChart() {
 function updateChart(cont, rate, rateString) {
   document.getElementById('rate').innerHTML = rateString;
   var coor$ = [ cont.toString(), rate ]; // Example: ["1",  41.6] / String and float
-  if ( dataArray$.length > 40) {
+  if ( dataArray$.length > 120) {
     dataArray$.splice(1, 1);
   }
   dataArray$.push(coor$);
